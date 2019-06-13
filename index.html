@@ -1,31 +1,81 @@
-<html>
-	<head>
-		<title>Starbuzz Coffee</title>
-		<style type="text/css">
-		body{
-			background-color:#d2b48c;
-			margin-left:20%;
-			margin-right:20%;
-			border:2px dotted black;
-			padding:10px 10px 10px 10px;
-			font-family:sans-serif;
-		}
-		</style>
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>管养通</title>
+    <link rel="stylesheet" href="http://www.cewater.com.cn/3rd/element-ui2.4.8/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="./vendors/loaders.css">
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.4&key=2b1d267296f8bdb4d8b5f8b89c0b618b&plugin=AMap.Geocoder&plugin=AMap.Autocomplete"></script>
+    <!--引入高德地图UI组件库（1.0版本） -->
+    <script src="//webapi.amap.com/ui/1.0/main.js"></script>
 
-	<body>
-		<h1> Starbuzz Coffee Beverages </h1>
+    <!-- Bootstrap -->
+    <link href="http://www.ewateryun.com/3rd/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/arcgis/4.7/esri/css/main.css">
 
-		<h2>House Blend, $1.499</h2>
-		<p id="houseblend">A smooth,mild blend of coffees from Mexico, Bolivia and Guatemala.</p>
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui@1.4/lib/theme-default/index.css">-->
+</head>
 
-		<h2>Mocha cafe Latte, $2.35</h2>
-		<p>Espresso, steamed milk and chocolate syrup.</p>
-
-		<h2>Cappuccino, $1.89</h2>
-		<p>A mixture of espresso, steamed milk and foam.</p>
-
-		<h2>Chai Tea, $1.85</h2>
-		<p>A spicy drink made with black tea, spices, milk and honey.</p>
-	</body>
+<body class="app-body">
+<div id="app">
+    <show-big-image></show-big-image>
+    <div class="loadingMask" id="loadingMask">
+        <img src="./img/loadingLogo.gif">
+    </div>
+    <keep-alive>
+        <router-view></router-view>
+    </keep-alive>
+</div>
+<!-- jQuery -->
+<script src="./vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="./vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="http://www.ewateryun.com/3rd/vue2.5/dist/vue.min.js"></script>
+<script src="http://www.cewater.com.cn/3rd/element-ui2.4.8/lib/index.js"></script>
+<script src="../lib/arcgis/4.7/init.js"></script>
+<script type="text/javascript">
+    window.cesc = {
+        require: require,
+        define: define,
+        dojo: dojo
+    }
+</script>
+<!--webpack dll文件-->
+<script src=""></script>
+<!--
+<script type="text/javascript" src="./app.dc36a924.bundle.js"></script>-->
+ <script type="text/javascript" >
+    $.getScript("./app.dc36a924.bundle.js",function(){
+        console.log("脚本加载完成");
+                $('#loadingMask').hide();
+    });
+</script> 
+<!-- Custom Theme Scripts -->
+<script src="./vendors/custom.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<!-- <script type="text/javascript">
+    window.onload=function(){
+        var socket = new SockJS("http://139.159.246.230:20881/endpointMain");
+        var stompClient = Stomp.over(socket);
+        var userInfo={
+            classes:"noon",
+            listUserNames:"[eadmin]",
+        };
+        stompClient.connect(userInfo, function () {
+            alert("f")
+        });
+    }
+</script> -->
+</body>
 </html>
