@@ -1,0 +1,24 @@
+.appRiskPointContainer {
+
+
+  .el-dialog__header {
+    padding: 0px;
+  }
+
+
+
+  .el-dialog__headerbtn {
+    top: -10px;
+    right: -10px;
+    background: #087198;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    z-index: 1000;
+  }
+
+  .el-dialog__headerbtn .el-dialog__close {
+    color: #fff;
+  }
+
+}

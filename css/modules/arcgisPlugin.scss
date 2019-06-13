@@ -1,0 +1,746 @@
+.right-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  height: 100%;
+  width: 380px;
+  -webkit-box-shadow: 3px 15px 14px 10px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 3px 15px 14px 10px rgba(0, 0, 0, .2);
+  box-shadow: 3px 15px 14px 10px rgba(0, 0, 0, .2);
+}
+
+/*地图插件样式*/
+.mapTools {
+  position: absolute;
+  top: 80px;
+  padding: 10px 0 !important;
+  box-shadow: none;
+  width: 40px;
+}
+
+.esri-scale-bar {
+  .esri-widget {
+    position: relative;
+    bottom: 60px;
+    right: -30px;
+  }
+}
+
+.action-button {
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #6e6e6e;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.action-button:hover,
+.action-button:focus {
+  background: #2f3a44 !important;
+  color: #e4e4e4;
+}
+
+.side-menu {
+  .active {
+    background: #2f3a44 !important;
+    color: #e4e4e4;
+    border-color: #409eff;
+  }
+}
+
+.esri-popup__feature-buttons {
+  .esri-popup__action {
+    padding: 8px;
+    border-radius: 4px;
+    margin: 5px auto;
+    height: 30px;
+    width: 60%;
+    max-width: initial;
+  }
+}
+
+.esri-popup__navigation {
+  display: none;
+}
+
+.esri-popup__action-text {
+  margin: 0 auto;
+}
+
+/*弹出的地图搜索框*/
+.esri-ui-top-right .esri-component, .esri-ui-top-left .esri-component {
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.map-search {
+  .el-input {
+    width: calc(100% - 50px);
+  }
+  .el-input__inner {
+    padding-right: 0;
+  }
+  .searchBtn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 12px 10px;
+    float: right;
+  }
+}
+
+.locationSearch {
+  .el-input {
+    width: 116px;
+    float: left;
+    .el-input--suffix {
+      .el-input__inner {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+.pickupLocation {
+  .el-input {
+    width: 250px;
+    float: left;
+  }
+  .el-input-group__prepend {
+    background-color: #f5f7fa;
+    color: #909399;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    padding: 0 20px;
+    width: 70px;
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+
+.map-search, .locationSearch {
+  width: 280px;
+  display: table;
+}
+
+.map-tools {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 360px;
+  max-width: 370px;
+  .toolContent {
+    background-color: #fff;
+    width: 280px;
+  }
+  .toolControl {
+    width: 90px;
+  }
+  .el-input__inner {
+    border-color: #f8f8f8;
+    border-radius: 0;
+    padding-left: 5px;
+  }
+  .tool-row {
+    box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  .el-button {
+    border-radius: 0;
+    padding: 12px 9px;
+  }
+}
+
+.my-dropdown {
+  .el-dropdown-menu__item {
+    padding: 0 10px;
+  }
+}
+
+.map-tools .x-row, .map-tools .x-col {
+  padding: 0;
+}
+
+.pipe-check-add {
+  .el-input__inner {
+    border-radius: 0;
+    border-color: #409eff;
+    height: 36px;
+    padding: 5px;
+  }
+}
+
+.tool-row {
+  .el-button {
+    font-size: 15px;
+  }
+}
+
+.cj-btn {
+  height: 36px;
+  padding: 8px 10px;
+}
+
+.x-col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  padding: 5px;
+  width: 100%;
+  .left-primary {
+    font-weight: bold;
+  }
+  &.x-col-fixed {
+    -webkit-box-flex: initial;
+    -webkit-flex: initial;
+    -moz-box-flex: initial;
+    -moz-flex: initial;
+    -ms-flex: initial;
+    flex: initial;
+    width: auto;
+  }
+  &.x-col-center {
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+}
+
+.dropdown {
+  .el-submenu__title {
+    background-color: #d9dee4 !important;
+  }
+}
+
+.search-resource {
+  position: absolute;
+  max-height: 500px;
+  overflow-y: auto;
+  top: 45px;
+  width: 100%;
+  left: 0;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #f3f3f3;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background-color: #f3f3f3;
+    -webkit-border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #f3f3f3;
+    border: solid 1px #c0c0c0;
+    border-radius: 8px;
+  }
+  ul {
+    background-color: #fff;
+  }
+}
+
+.searchLoading {
+  background-color: #fff;
+  padding: 10px;
+  color: #777;
+}
+
+.noSearch {
+  color: #999;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.res-li {
+  padding: 10px;
+  .el-icon-search {
+    padding-right: 5px;
+  }
+  &:hover {
+    background-color: #eee;
+    color: #555;
+  }
+}
+
+.x-row {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  padding: 5px;
+  width: 100%;
+  .first-x {
+    input {
+      border-right: 0;
+    }
+  }
+}
+
+.x-col-fixed {
+  -webkit-box-flex: initial;
+  -webkit-flex: initial;
+  -moz-box-flex: initial;
+  -moz-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
+  width: auto;
+}
+
+.x-col-center {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+/*搜索请求框*/
+.loading-content {
+  .el-icon-loading {
+    color: #fff;
+  }
+}
+
+/*定位坐标*/
+.two-y {
+  .el-input__inner {
+    border-left-color: #eee;
+  }
+}
+
+.search-xy {
+  position: absolute;
+  left: 340px;
+  top: 0;
+  background-color: #fff;
+  padding: 15px;
+  .input-control {
+    display: inline-block;
+    width: 120px;
+    padding: 5px;
+  }
+  .el-button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-left: 10px;
+    margin-right: 25px;
+  }
+  .close-btn {
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+
+/*排水户录入弹窗*/
+.add-content {
+  position: relative;
+}
+
+.sewerage-container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  width: 100%;
+  .el-input__inner {
+    width: 100%;
+  }
+  .el-icon-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 5px;
+    font-size: 15px;
+  }
+}
+
+.inputRow {
+  padding: 5px 15px;
+  .x-col {
+    &:first-child {
+      width: 100px;
+    }
+  }
+  .el-input {
+    border: 1px solid #ddd;
+    .el-input__inner {
+      height: 32px;
+      padding: 0 25px 0 10px;
+      font-size: 13px;
+    }
+    .el-input__suffix {
+      top: 0;
+      right: 0;
+      width: 30px;
+    }
+  }
+  .label-span {
+    width: 45px;
+    display: inline-block;
+  }
+}
+
+.nextDiv {
+  padding: 10px 15px;
+  .el-button {
+    padding: 8px 12px;
+    width: 60px;
+  }
+}
+
+/*上传插件*/
+.upload-demo {
+  input[type=file] {
+    display: none;
+  }
+}
+
+.uploadDiv {
+  padding: 5px 5px 10px 15px;
+  .el-upload-list__item-name {
+    font-size: 13px;
+  }
+  .el-upload-list__item-status-label {
+    top: 5px;
+  }
+  .el-upload-list {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+}
+
+.el-upload__tip {
+  color: #999;
+}
+
+.upAfter {
+  padding: 0 18px 10px 15px;
+}
+
+/*基础功能点选*/
+.esri-popup__button {
+  &.esri-popup__button--dock {
+    display: none;
+  }
+}
+
+[class*="esri-popup--aligned-bottom-"] {
+  .esri-popup__feature-buttons {
+    border-bottom: 0;
+  }
+}
+
+.popup-title {
+  background-color: #409eff;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.gaoqingPopupCustom {
+  .esri-popup__button {
+    background-color: #409eff;
+    height: 40px;
+    color: #fff;
+  }
+}
+
+.esri-popup__header-buttons {
+  padding: 0;
+}
+
+h2 {
+  &.esri-popup__header-title {
+    padding: 0;
+    margin-right: -30px;
+  }
+}
+
+.popup-content {
+  .x-col-fixed {
+    color: #999;
+    width: 100px;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 12px;
+  }
+  .x-row {
+    padding: 0;
+  }
+}
+
+/*线、多边形数据展示*/
+.data-container {
+  position: absolute;
+  top: 10px;
+  right: 5px !important;
+  z-index: 2 !important;
+  width: 345px !important;
+  min-height: 450px;
+  max-height: 750px;
+  display: inline-block;
+  border: 1px solid #eee;
+  background-color: #fff;
+  &:hover {
+    z-index: 10 !important;
+  }
+}
+
+.map-search-container {
+  .el-header {
+    padding: 10px;
+    background-color: #409eff;
+    color: #fff;
+    .el-icon-close {
+      padding: 1px 5px;
+    }
+  }
+  .el-main {
+    padding: 0 10px;
+    min-height: 370px;
+  }
+  .el-icon-close {
+    float: right;
+    font-size: 20px;
+  }
+}
+
+.layer-li {
+  border: 1px solid #ddd;
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin: 7px 0;
+}
+
+span {
+  &.feature-count {
+    float: right;
+    padding: 0px 8px;
+    background-color: #409eff;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 12px;
+  }
+}
+
+.detail-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-height: 650px;
+  z-index: 10;
+  background-color: #fff;
+  .primary-id {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    color: #409eff;
+    font-weight: bold;
+    font-size: 12px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .detail-li {
+    padding: 0;
+  }
+  .layer-li {
+    &:hover {
+      background-color: rgba(64, 158, 255, 0.1);
+    }
+    &:active {
+      background-color: rgba(64, 158, 255, 0.4);
+      color: rgb(64, 158, 255);
+    }
+  }
+  .el-footer {
+    -webkit-box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.15);
+    margin: 0 !important;
+    padding: 5px 0;
+  }
+}
+
+.detail-back-btn {
+  float: left;
+  font-size: 20px;
+}
+
+.detail-li {
+  .x-row {
+    padding: 0;
+    font-size: 12px;
+    color: #222;
+    .x-col-fixed {
+      color: #999;
+      width: 90px;
+    }
+  }
+}
+
+/*点选*/
+.point-content {
+  max-height: 700px !important;
+  min-height: auto;
+  .el-header {
+    background-color: #1d9dff;
+    padding: 0;
+    .header-layer-main {
+      padding: 0 0 10px 0;
+    }
+  }
+  .layer-view {
+    padding: 0 10px;
+    min-height: 200px;
+  }
+  .el-collapse-item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.top-header-select {
+  color: #fff;
+}
+
+.el-header {
+  .el-icon-close {
+    padding: 5px;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+.layer-view {
+  .el-dropdown {
+    font-size: 15px;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-top: 2px;
+    .el-icon-caret-bottom {
+      float: right;
+    }
+    i {
+      font-size: 18px;
+      margin-top: 2px;
+    }
+  }
+  .el-collapse {
+    border: 0;
+    .el-collapse-item {
+      margin-top: 6px;
+    }
+  }
+}
+
+.select-layer {
+  &.el-dropdown-menu {
+    top: 177px !important;
+    left: 1624px !important;
+    width: 275px;
+  }
+}
+
+.header-layer-main {
+  .loading-data {
+    color: #fff;
+    padding: 5px;
+  }
+  .el-collapse-item__header {
+    color: #fff;
+    border: 0;
+    background-color: #0089f3;
+    height: 35px;
+    padding: 0 10px;
+    line-height: 35px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    &.is-active {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+      color: #ddd;
+      background-color: #0979d0;
+    }
+  }
+  .el-collapse-item__arrow {
+    margin: 8px 0 0 0;
+    line-height: 20px;
+  }
+  .el-collapse-item__content {
+    background-color: rgba(166, 215, 255, 0.5);
+    color: #295d85;
+    padding: 5px 5px 5px 25px;
+    &:hover {
+      background-color: rgba(166, 215, 255, 0.95);
+    }
+  }
+  .el-collapse-item__wrap {
+    border-bottom: 0;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+}
+
+.loading-data {
+  padding: 10px 0;
+}
+
+.point-attr {
+  padding: 0;
+  height: 270px;
+  overflow-y: auto;
+  .el-main {
+    padding: 0 0 10px;
+    max-height: 500px;
+    background-color: #fff;
+  }
+  .el-header {
+    background-color: #e7f4fd;
+    color: #295d85;
+  }
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  background: #0a36e9;
+}
+
+.inp-label .el-input-group__append, .el-input-group__prepend {
+  background-color: #f5f7fa;
+  color: #909399;
+  vertical-align: middle;
+  display: table-cell;
+  position: relative;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  padding: 0 20px;
+  width: 165px;
+  white-space: nowrap;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.infoDeclare {
+    padding: 10px 15px;
+    .form{
+        width: 800px;
+        .el-form-item{
+            width: 100%;
+            display: flex;
+            .el-form-item__content{
+                flex: 1;
+                .el-select{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

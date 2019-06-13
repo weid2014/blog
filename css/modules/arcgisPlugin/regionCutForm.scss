@@ -1,0 +1,62 @@
+.regionCutContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 500px;
+  height: auto;
+  min-height: 300px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  z-index: 1000;
+  .regionTitle {
+    background-color: #157dd6;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    padding: 12px 0;
+    i {
+      font-size: 23px;
+      padding: 12px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  .el-form {
+    padding: 15px 5px;
+    .unit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 70px;
+      padding-left: 10px;
+    }
+    .selectItem1 {
+      width: calc(100% - 70px);
+      .el-select {
+        width: 100%;
+      }
+
+    }
+    .unitItem {
+      .el-textarea, .el-input {
+        width: calc(100% - 70px);
+      }
+    }
+  }
+  .colorSelection {
+    position: relative;
+    width: 318px;
+    height: 40px;
+    padding:0 15px;
+    color:#ccc;
+    border:1px solid #ccc;
+    i {
+      position: absolute;
+      right: 7px;
+      top: 13px;
+      color: #ccc;
+    }
+  }
+}

@@ -1,0 +1,179 @@
+.flowAnalyze {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  border-top: 1px solid #b3b3b3;
+  background: white;
+  z-index: 9;
+  .el-button--small {
+    padding: 7px 10px;
+    float: right;
+    margin-top: 5px;
+  }
+  .analyzeContent {
+    width: 100%;
+    height: calc(100% - 40px);
+  }
+  .analyzeHeader {
+    min-width: 100px;
+    float: left;
+    border-right: 1px solid lightblue;
+    height: 100%;
+    & > div {
+      height: 31px;
+      line-height: 31px;
+      text-align: center;
+      border-bottom: 1px solid blue;
+      padding: 0 5px;
+    }
+  }
+  .analyzeDetail {
+    float: left;
+    overflow-x: auto;
+    height: 100%;
+    overflow-y: hidden;
+    width: calc(100% - 300px);
+  }
+  .analyzeChart {
+    height: 100%;
+    float: left;
+    width: 200px;
+    border-right: 1px solid #b3b3b3;
+    .analyzeDes {
+      height: 50%;
+      .desContent {
+        float: left;
+        width: calc(100% - 30px);
+        height: 100%;
+        text-align: center;
+        line-height: 80px;
+        font-size: 50px;
+        font-weight: bold;
+        border: 1px solid;
+      }
+      .desTitle {
+        float: left;
+        width: 30px;
+        writing-mode: vertical-lr;
+        writing-mode: tb-lr;
+        height: 100%;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+        border: 1px solid gray;
+      }
+    }
+  }
+}
+
+.analyzeTitle {
+  background-color: #4e5e6b;
+  height: 40px;
+  line-height: 40px;
+  .el-input__inner {
+    background: transparent;
+    border-color: transparent;
+    color: white;
+  }
+  .el-radio-group {
+    margin-top: 2px;
+    width: 1050px;
+    display: block;
+    float: left;
+    margin-left: calc(50% - 525px);
+    .el-radio-button__orig-radio:checked + .el-radio-button__inner {
+      background-color: #053f7b;
+    }
+    .el-radio-button__inner {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+    .el-radio-button, .el-radio-button__inner{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.flowAnalyzeSummary {
+  .x_content {
+    height: calc(100% - 54px);
+    & > div {
+      float: left;
+      border: 1px solid whitesmoke;
+    }
+  }
+  .lineContainer {
+    border-top: 1px solid lightblue;
+    margin-top: 1px;
+    .lineDetail {
+      height: calc(100% - 75px);
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+    }
+    .el-select {
+      width: 250px;
+    }
+    .x_title {
+      height: 42px;
+      line-height: 42px;
+    }
+    .analyzeTips {
+      color: darkgreen;
+      font-size: 12px;
+    }
+  }
+  .lineGraph {
+    height: calc(100% - 30px);
+    width: 100%;
+  }
+  .lineHeader {
+    line-height: 30px;
+    text-align: center;
+    background: #5b9bd5;
+    color: #fff;
+  }
+  .controlContainer {
+    float: right;
+    .el-progress-bar__innerText {
+      margin-top: 2px;
+    }
+    .el-button--small {
+      margin-top: 2px;
+    }
+    & > span {
+      float: left;
+      display: inline-block;
+      margin-right: 5px;
+      line-height: 42px;
+    }
+    .iconfont {
+      font-size: 18px;
+    }
+  }
+  .el-progress {
+    width: 200px;
+    float: left;
+    margin-top: 13px;
+    margin-right: 10px;
+  }
+  .x_title {
+    .titleSpan {
+      color: darkgray !important;
+    }
+    span {
+      color: inherit;
+    }
+  }
+}
+
+#pipeLineMap {
+  width: 100%;
+  height: calc(100% - 30px);
+}
+
+@media screen and (max-width: 500px) {
+  .analyzeTitle {
+    padding-left: 0 !important;
+  }
+}

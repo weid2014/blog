@@ -1,0 +1,51 @@
+.legendContainer {
+  position: absolute;
+  left: 28px;
+  top: 361px;
+  .legendTooltip {
+    .is-dark {
+      background: #fff;
+      color: #333;
+    }
+  }
+  .legendBtn {
+    font-size: 13px;
+    height: 33px;
+    width: 33px;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
+.el-tooltip__popper.is-dark {
+  background: rgba(48, 49, 51, 0.75);
+}
+
+.el-tooltip__popper[x-placement^=right] .popper__arrow::after {
+  border-right-width: 0;
+}
+
+.el-tooltip__popper[x-placement^=right] .popper__arrow {
+  border-right-color: rgba(48, 49, 51, 0.75);
+}
+
+.legendWrap {
+  flex-wrap: wrap;
+  grid-gap: 2px;
+  width: 190px !important;
+  padding: 0 5px;
+  font-size: 12px;
+}
+
+.legendChild {
+  padding: 3px 0;
+  width: 90px;
+  display: inline-block;
+  text-align: left;
+}
+
+.legendChild img {
+  width: 12px;
+  height: auto;
+  min-height: 7px;
+}

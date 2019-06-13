@@ -1,0 +1,32 @@
+.notificationMessage {
+  .el-dialog {
+    width: 600px;
+  }
+  .el-dialog-body {
+    padding: 10px 5px;
+    height: 170px;
+  }
+  .el-dialog__header {
+    line-height: 35px;
+    height: 35px;
+    padding: 10px;
+  }
+  .el-dialog__title {
+    line-height: 35px;
+    font-size:15px;
+    font-weight:bold;
+  }
+  .messageContent {
+    padding: 5px;
+    height: 170px;
+  }
+
+  .el-textarea {
+    height: 170px;
+    display: block;
+    & > textarea {
+      height: 100%;
+      padding: 5px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.mixConnectPoint {
+  .el-radio-group {
+    display: block;
+    margin: 5px auto;
+    width: 181px;
+  }
+  .pointDetail, .pointSummary {
+    height: calc(100% - 55px);
+  }
+  .typeSummaryChart {
+    width: 100%;
+    height: 45%;
+  }
+  .roadTable {
+    width: 100%;
+    height: 55%;
+  }
+  .allRoad {
+    width: 100%;
+    height: 100%;
+  }
+  .panelContent {
+    .pointSummary {
+      margin-top: -5px;
+      .dataTable {
+        .dataContentTitle {
+          width: 100%;
+          text-align: center;
+          padding-bottom: 8px;
+          color: #0c6fc3;
+          font-size: 14px;
+          margin-top: -70px;
+          .regionName {
+            color: #666666;
+          }
+          .regionArea {
+            span{
+              color: #666666;
+            }
+          }
+        }
+        .dataContent {
+          float: left;
+          width: 110px;
+          height: 58px;
+          border: 1px solid #dddddd;
+          border-radius: 6px;
+          .dataContentValue {
+            display: block;
+            font-size: 18px;
+            text-align: center;
+            height: 50%;
+            color: #01559b;
+            font-family: Arial;
+          }
+          .dataContentName {
+            display: block;
+            font-size: 12px;
+            text-align: center;
+            height: 50%;
+            color: #666666;
+            font-family: "Microsoft YaHei";
+          }
+        }
+      }
+    }
+  }
+}

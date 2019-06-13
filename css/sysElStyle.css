@@ -1,0 +1,15 @@
+.margin-left{
+    margin-left:10px;
+}
+.pagination-position{
+    width: 95%;
+    position: relative;
+}
+.pagination-position .pagination-right {
+    position: absolute;
+    right: 0px;
+}
+.fix-height {
+    width:100%;
+    margin-bottom:15px;
+}

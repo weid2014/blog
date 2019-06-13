@@ -1,0 +1,44 @@
+.registionAuth {
+  .x_panel {
+    height: 100%;
+    margin-bottom: 0;
+    .x_title {
+      height: 40px;
+    }
+    .x_content {
+      height: calc(100% - 45px);
+      width: 100%;
+    }
+  }
+  .applicationTable {
+    width: 100%;
+    height: calc(100% - 80px);
+    overflow-y: auto;
+  }
+  .toolPanel {
+    height: 42px;
+    margin-bottom: 5px;
+  }
+  .confirmPanel {
+    .el-dialog {
+      width: 500px;
+    }
+    .el-dialog__header {
+      text-align: center;
+      padding-top: 5px;
+    }
+    .el-form {
+      padding: 5px;
+      .is-disabled > input {
+        background-color: white !important;
+        color: #000 !important;
+      }
+      .el-select {
+        width: 100%;
+        .el-select__tags-text {
+          color: #000;
+        }
+      }
+    }
+  }
+}

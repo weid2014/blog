@@ -1,0 +1,45 @@
+// 公共组件 - 用于安全生产-隐患详情
+.riskTimeline{
+    font-size: 14px;
+    padding: 10px;
+    overflow-y: auto;
+    height: 100%;
+    width: 270px;
+    border-right: 1px solid #eee;
+    .riskTimeline-item{
+        position: relative;
+        padding-bottom: 20px;
+        .riskTimeline-item__node{
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #e4e7ed;
+            border-radius: 50%;
+            left: -1px;
+            width: 12px;
+            height: 12px;
+            &--primary {
+                border-color: #409eff;
+            }
+        }
+        .riskTimeline-item__tail{
+            position: absolute;
+            left: 4px;
+            height: 100%;
+            border-left: 2px solid #e4e7ed;
+        }
+        .riskTimeline-item__wrapper{
+            position: relative;
+            padding-left: 28px;
+            top: -3px;
+            .riskTimeline-item__content{
+                color: #303133;
+            }
+            .riskTimeline-item__time{
+                color: #909399;
+                line-height: 1;
+                font-size: 13px;
+                margin-top: 5px;
+            }
+        }
+    }
+}

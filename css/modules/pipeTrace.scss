@@ -1,0 +1,117 @@
+
+.trace-content-box {
+    padding: 10px 0 5px 0;
+}
+
+.trace-content-box .timeTitle {
+    line-height: 2.5em;
+}
+
+.panel-content-box .queryButton {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.panel-content-box .queryButton > button {
+    width: 50%;
+}
+
+.restrospectDetail .el-form-item {
+    margin-bottom: 0;
+}
+
+.restrospectDetail .el-form {
+    margin-top: 0.5em;
+}
+
+.restrospectDetail .el-dialog--tiny {
+    width: 35em;
+}
+
+.panel-box-title {
+    width: 95%;
+    padding: 0.5em;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.panel-box-title .el-radio-group {
+    display: block;
+}
+
+.panel-box-title .el-radio-button {
+    width: 50%;
+}
+
+.panel-box-title .el-radio-button__inner {
+    width: 100%;
+}
+
+.line-pipe-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.line-pipe-content li {
+    margin-bottom: 8px;
+}
+
+.line-pipe-content label {
+    margin-bottom: 0;
+}
+
+.trace-panel-table {
+    height: 22em;
+    overflow-y: auto;
+}
+
+.pipe-panel-header {
+    line-height: 2.6em;
+    position: absolute;
+    bottom: 18em;
+    width: calc(100% - 422px);
+    text-align: center;
+    background: #5B9BD5;
+    color: #fff;
+}
+
+.charts-detail {
+    z-index: 4;
+    width: calc(100% - 422px);
+    height: 18em;
+    position: absolute;
+    bottom: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    right: 300px;
+    background: #F4F4F4;
+    border: 1px solid #ccc;
+}
+
+.pipeExecuteMode {
+
+.charts-detail {
+    left: 0;
+    right: auto;
+}
+
+}
+
+#restrospectLineChart {
+    width: 100%;
+    height: 100%;
+    margin-left: -40px;
+}
+
+#restrospectChart {
+    width: 100%;
+    height: 110%;
+    margin-top: -2%;
+}

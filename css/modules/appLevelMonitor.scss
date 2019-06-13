@@ -1,0 +1,19 @@
+//满管统计
+.appLevelMonitor {
+
+  .dateSelector {
+    height: 50px;
+    padding-top: 5px;
+    background-color: #e2e2e2
+  }
+  .dataContent {
+    padding: 5px;
+    height: calc(100% - 55px);
+    width: 100%;
+  }
+}
+
+#cityCenterPipeChart {
+  width: 100%;
+  height: calc(100% - 235px)
+}

@@ -1,0 +1,64 @@
+.regionDataExport {
+  height: 100%;
+  width: 100%;
+  .linkBtn {
+    border: 1px solid #0e9aef;
+    color: #0e9aef;
+  }
+  .cell {
+    text-align: center;
+  }
+  .el-table {
+    td {
+      padding: 5px 0;
+    }
+  }
+  .table1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .addSelectBtn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .collectorData {
+    margin-top: 20px;
+  }
+  .exportBtn {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    //margin-top: 20px;
+    width: 40%;
+  }
+  .exportRow {
+    height: 100%;
+    .x-col {
+      padding: 10px;
+      height: 100%;
+      overflow: auto;
+    }
+    .colContent {
+      border: 1px solid #eee;
+      height: 100%;
+      padding: 10px;
+      background-color: #f8f8f8;
+    }
+    .exportTitle {
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    .el-form-item__content {
+      .el-select {
+        width: 100%;
+      }
+    }
+  }
+  .collectorTable {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

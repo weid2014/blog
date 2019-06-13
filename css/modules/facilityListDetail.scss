@@ -1,0 +1,52 @@
+.facilityListDetail {
+  .demo-table-expand {
+    font-size: 0;
+  }
+  .demo-table-expand label {
+    width: 165px;
+    color: #99a9bf;
+  }
+  .el-table {
+    th {
+      padding: 0;
+      background-color: #105ba3;
+      color: white;
+    }
+    td {
+      padding: 5px 0;
+    }
+  }
+  .demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 50%;
+    .el-form-item__content {
+      & > span {
+        line-height: 40px;
+      }
+    }
+  }
+  .x_panel {
+    margin: 0 !important;
+    .x_title {
+      height: 45px;
+    }
+    .el-input, .el-button {
+      float: left;
+    }
+    .el-button {
+      margin-left: 5px;
+    }
+  }
+  .x_content {
+    height: calc(100% - 120px);
+    width: 100%;
+  }
+  .el-table {
+    width: 100%;
+    height: 100%;
+  }
+  .el-input {
+    width: 300px;
+  }
+}

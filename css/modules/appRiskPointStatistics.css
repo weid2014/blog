@@ -1,0 +1,96 @@
+#dialogHeader .el-dialog {
+    width: 60%;
+}
+
+#dialogHeader .el-dialog__header {
+    padding: 0;
+    text-align:center;
+}
+
+#dialogHeader .el-table th>.cell{
+    text-align:center;
+}
+
+.x_content {
+    padding: 0 5px 6px;
+    position: relative;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 5px
+}
+
+.cesc-input-risk{
+    padding: 0 5px;
+}
+
+.cesc-risk-manager{
+    margin-top: 10px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.cesc-risk-manager .el-switch__label *{
+    line-height: initial;
+}
+.left-content{
+    background-color: #008add;
+    color: #fff;
+    height: 100%;
+    border-radius: 8px;
+    text-align: center;
+    max-height: 200px;
+    position: relative;
+}
+.left-content .weak{
+    color: #a9d8f5;
+    margin-right: 8px;
+}
+.left-content .count_top{
+    background: #009fff;
+    border-radius: 30px;
+    padding: 8px 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.backDiv{
+    background-color: #fff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    max-height: 100px;
+}
+.left-content .district{    font-size: 42px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;}
+.left-content .count_bottom{
+    padding: 15px;
+    background-color: #009fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 14px !important;
+}
+.facilitySummary .x-col  .count {
+    font-size: 28px;
+    color: #555;
+    font-weight: bold;
+}
+.x-col .count_top,.x-col .count_bottom{
+    font-size: 12px;
+}
+.topContent .x-col{
+    padding: 4px 8px;
+}
+.noVideo{
+    background-color: #fff;
+    color: #999;
+}
+.noVideo img{
+    margin-right: 5px;
+    width: 100%;
+    height: 100%;
+}

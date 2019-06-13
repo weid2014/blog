@@ -1,0 +1,33 @@
+.reportStatistics {
+  padding:30px 15px;
+  .toolBar {
+    .el-select {
+      width: 100%;
+    }
+    .el-date-editor {
+      width:100%;
+      .el-range-input {
+        width: calc(50% - 33px);
+      }
+    }
+  }
+  .container {
+    height: calc(100% - 60px);
+    .el-row {
+      height: 100%;
+      .el-col {
+        height: 100%;
+        .statisticsTitle {
+          display: block;
+          font-weight: bold;
+          font-size: 24px;
+          font-family: 'Microsoft YaHei';
+          padding-bottom: 20px;
+        }
+        .statisticsChart {
+          height: calc(100% - 90px);
+        }
+      }
+    }
+  }
+}

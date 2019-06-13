@@ -1,0 +1,88 @@
+.nextDayPlan{
+  padding: 10px 15px 0;
+  .pageTop{
+      display: flex;
+      padding: 10px 0;
+      .pageTop-left{
+          flex: 1;
+      }
+      .pageTop-right{
+          text-align: right;
+      }
+  }
+  .container {
+    height: 100%;
+    .checkImg {
+      width: 100px;
+      height: 100px;
+      margin: 3px;
+    }
+    table{
+      .warning-row{
+        td:first-child :before {
+          content: '';
+          display: block;
+          background: #F44336;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          margin-top: -5px;
+          left: 5px;
+        }
+      }
+    }
+  }
+  .pageTool {
+    text-align: right;
+  }
+  .planDetail{
+    .form{
+      padding: 0px 20px;
+      .form-inline{
+          min-width: 46%;
+          display: inline-block;
+          position: relative;
+          min-height: 40px;
+          vertical-align: top;
+          > .el-form-item__label{
+              // position: absolute;
+              margin: 0;
+          }
+          > .el-form-item__content{
+              // margin-left: 100px !important;
+          }
+      }
+      .form-block{
+          width: 100%;
+      }
+      .form-block>.el-form-item__label{
+          width: 100% !important;
+          text-align: left;
+      }
+      .form-block>.el-form-item__content{
+          margin-left: 0 !important;
+      }
+    }
+    .checkbox-group{
+      .el-checkbox {
+        + .el-checkbox {
+          margin-left: 0;
+        }
+        margin-right: 20px;
+        min-width: 220px;
+      }
+    }
+    .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+      background-color: #409EFF;
+      border-color: #409EFF;
+    }
+    .el-checkbox__input.is-disabled+span.el-checkbox__label {
+      color: #606266;
+    }
+    .el-checkbox__input.is-checked+.el-checkbox__label {
+        color: #409EFF;
+    }
+  }
+}

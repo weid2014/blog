@@ -1,0 +1,31 @@
+.projectInfo {
+  padding:10px 15px 0;
+  .toolBar {
+    padding-bottom: 5px;
+  }
+  .container {
+    // height: calc(100% - 90px);
+    // overflow: scroll;
+  }
+  .pageTool {
+    text-align: right;
+    padding: 10px 0;
+  }
+  .addProjectDialog {
+    .projectForm {
+      padding: 0px 10px;
+    }
+    .el-select {
+      width: 100%;
+    }
+    .el-form-item {
+      display: -webkit-flex;
+      display: flex;
+      .el-form-item__content {
+        -webkit-flex: 1;
+        flex: 1;
+      }
+    }
+
+  }
+}

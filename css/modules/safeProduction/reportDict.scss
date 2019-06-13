@@ -1,0 +1,49 @@
+.reportDict{
+  padding: 20px;
+  .el-container {
+    height:100%;
+    .toolBar {
+      padding-bottom: 10px;
+    }
+    .container {
+      height: calc(100% - 50px);
+    }
+    .el-main {
+      padding: 0px;
+      margin-left: 10px;
+    }
+  }
+  .reportDict {
+    .el-select {
+      width: 100%;
+    }
+    .el-form-item {
+      display: -webkit-flex;
+      display: flex;
+      .el-form-item__content {
+        -webkit-flex: 1;
+        flex: 1;
+      }
+    }
+  }
+  .reportRelateDict {
+    .el-select {
+      width: 100%;
+    }
+
+    .dictTypeSelect {
+      width: 150px;
+    }
+    .dictSelect {
+      width: calc(100% - 160px);
+    }
+    .el-form-item {
+      display: -webkit-flex;
+      display: flex;
+      .el-form-item__content {
+        -webkit-flex: 1;
+        flex: 1;
+      }
+    }
+  }
+}
