@@ -1,1 +1,0 @@
-C:\Users\Administrator\AppData\Roaming\npm\http-server -p 9999 --cors
